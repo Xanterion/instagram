@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Instamos' });
 });
 
 router.get('/helloworld', function(req, res) {
@@ -18,6 +18,14 @@ router.get('/userlist', function(req, res) {
         res.render('userlist', {
             "userlist" : docs
         });
+    });
+});
+
+router.get('/profile', function(req, res) {
+    var db = req.db;
+    var collection = db.get('usercollection');
+    collection.find({},{},function(e,docs){
+        res.render('profile');
     });
 });
 
