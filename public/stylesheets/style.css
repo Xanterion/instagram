@@ -25,12 +25,19 @@ a {
 	margin: 20px;
 	display: inline-block;
 	position: relative;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 2px;
 }
 
 .card-content{
 	padding: 20px;
     border-radius: 0 0 2px 2px;
+}
+
+#signup{
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    padding:10px;
 }
